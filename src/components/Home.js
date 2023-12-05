@@ -5,12 +5,12 @@ import Alert from "./Alert";
 import Notes from "./Notes";
 
 export default function Home() {
-    const { alert } = useNoteContext();
-    return (
-        <>
-            <Alert alert={alert} />
-            {/* <AddNote /> */}
-            <Notes />
-        </>
-    );
+  const { alert } = useNoteContext();
+  return (
+    <>
+      <Alert alert={alert} />
+      <AddNote />
+      <Notes />
+    </>
+  );
 }

@@ -9,23 +9,22 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 
 function App() {
-
-    return (
-        <>
-            <BrowserRouter>
-                <NoteContextProvider>
-                    <Navbar />
-                    <Routes>
-                        {/* Routes used to change endpoints */}
-                        <Route exact path="/" element={<Home />} />
-                        <Route exact path="/login" element={<Login />} />
-                        <Route exact path="/signup" element={<Signup />} />
-                        <Route exact path="/about" element={<About />} />
-                    </Routes>
-                </NoteContextProvider>
-            </BrowserRouter>
-        </>
-    );
+  return (
+    <>
+      <BrowserRouter>
+        <NoteContextProvider>
+          <Navbar />
+          <Routes>
+            {/* Routes used to change endpoints */}
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/signup" element={<Signup />} />
+            <Route exact path="/about" element={<About />} />
+          </Routes>
+        </NoteContextProvider>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
