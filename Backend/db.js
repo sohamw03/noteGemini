@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-const mongoURI = "mongodb://127.0.0.1/inotebook";
+const mongoURI = `${process.env.MONGO_URI}`;
 
 const connectToMongo = () => {
-    mongoose.connect(mongoURI).then(() => {
-        console.log("Connected to MongoDB successfully!");
-    });
+  mongoose.connect(mongoURI).then(() => {
+    console.log("Connected to MongoDB successfully!");
+  });
 };
 
 module.exports = connectToMongo;
