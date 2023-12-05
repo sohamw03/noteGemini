@@ -16,8 +16,5 @@
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.3.1"
-  },
-  "engines": {
-    "node": ">=v18.19.0"
   }
 }
