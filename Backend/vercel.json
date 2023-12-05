@@ -5,7 +5,6 @@
       "use": "@now/node"
     }
   ],
-  "buildCommand": "yarn install; node index.js",
   "routes": [
     {
       "src": "/(.*)",
