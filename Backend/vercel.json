@@ -1,11 +1,11 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "index.js",
       "use": "@now/node"
     }
   ],
+  "buildCommand": "yarn install; node index.js",
   "routes": [
     {
       "src": "/(.*)",
